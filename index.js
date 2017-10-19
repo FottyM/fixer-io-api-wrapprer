@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
         .catch(function (error) {
             console.log(error)
         })
-})
+});
 
 app.get('/range', function (req, res) {
 
@@ -34,7 +34,7 @@ app.get('/range', function (req, res) {
             })
     }else{
         let keys = Object.keys(req.query);
-        console.log(keys)
+        console.log(keys);
         res.send(req.query)
     }
 
