@@ -34,7 +34,7 @@ app.get('/range', function (req, res) {
                 console.log(error)
             })
     }else{
-        let keys = Object.keys(req.query);
+        var keys = Object.keys(req.query);
         console.log(keys);
         res.send(req.query)
     }
